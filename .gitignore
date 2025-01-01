@@ -3,6 +3,26 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+
+## see: https://publish.obsidian.md/git-doc/Tips-and-Tricks#Gitignore
+# to only exclude plugin configuration. Might be useful to prevent some plugin from exposing sensitive data
+.obsidian/plugins
+
+.obsidian/workspace.json
+
+# to exclude workspace cache specific to mobile devices
+.obsidian/workspace-mobile.json
+
+# Add below lines to exclude OS settings and caches
+.trash/
+.DS_Store
+
+**/*.zip
+**/*.rar
+
+
+
+
 # User-specific files
 *.rsuser
 *.suo
@@ -82,8 +102,6 @@ StyleCopReport.xml
 *.pgc
 *.pgd
 *.rsp
-# but not Directory.Build.rsp, as it configures directory-level build defaults
-!Directory.Build.rsp
 *.sbr
 *.tlb
 *.tli
